@@ -10,3 +10,42 @@ closeMenu.addEventListener('click', function () {
     resMenu.classList.add("-right-full")
     resMenu.classList.remove("right-0")
   })
+let header = document.querySelector('#header')
+let logo = document.querySelector('#logo')
+let fixed_logo = document.querySelector('#fixed-logo')
+let fonta = document.querySelectorAll('#text')
+let fix_btn = document.querySelector('#fix-btn')
+let gamburger = document.querySelector('#gamburger')
+let fix_gamburger = document.querySelector('#fixed-gamburger')
+
+
+window.addEventListener('scroll' , function(){
+  if (window.scrollY > 200) {
+    header.classList.add('active')
+    logo.classList.add('hidden')
+    fixed_logo.classList.remove('hidden')
+    fix_btn.classList.add('text-white')
+    fix_btn.classList.add('border-white')
+    gamburger.classList.add('hidden')
+    fix_gamburger.classList.remove('hidden')
+
+
+  }else{
+    header.classList.remove('active')
+    logo.classList.remove('hidden')
+    fixed_logo.classList.add('hidden')
+    fix_btn.classList.remove('text-white')
+    fix_btn.classList.remove('border-white')
+    gamburger.classList.remove('hidden')
+    fix_gamburger.classList.add('hidden')
+  }
+})
+fonta.forEach(item => {
+  window.addEventListener('scroll' , function(){
+    if (this.window.scrollY > 200) {
+      item.classList.add('text-white')
+    }else{
+      item.classList.remove('text-white')
+    }
+  })
+});

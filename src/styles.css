@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00856F;
+    z-index: 50;
+}
+.active1{
+    display: none;
+}
+.text-active{
+    color: white;
+    border: white;
+}
