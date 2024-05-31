@@ -18,7 +18,14 @@ let fix_btn = document.querySelector('#fix-btn')
 let gamburger = document.querySelector('#gamburger')
 let fix_gamburger = document.querySelector('#fixed-gamburger')
 let section = document.querySelectorAll('.section')
+let body = document.querySelector('body')
 
+gamburger.addEventListener('click' , function(){
+    body.classList.add('overflow-hidden')
+})
+closeMenu.addEventListener('click' , function(){
+  body.classList.remove('overflow-hidden')  
+})
 
 window.addEventListener('scroll' , function(){
   if (window.scrollY > 200) {

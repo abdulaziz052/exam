@@ -658,6 +658,9 @@ video {
 .gap-\[8px\] {
   gap: 8px;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .rounded-\[40px\] {
   border-radius: 40px;
 }
