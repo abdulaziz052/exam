@@ -592,6 +592,9 @@ video {
 .w-\[432px\] {
   width: 432px;
 }
+.w-full {
+  width: 100%;
+}
 .max-w-\[1160px\] {
   max-width: 1160px;
 }
@@ -929,6 +932,10 @@ video {
 
   .md\:w-\[1120px\] {
     width: 1120px;
+  }
+
+  .md\:w-\[347px\] {
+    width: 347px;
   }
 
   .md\:max-w-\[404px\] {
