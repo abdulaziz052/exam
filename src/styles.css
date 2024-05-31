@@ -17,3 +17,9 @@
     color: white;
     border: white;
 }
+.active-border1{
+    border-bottom: 2px solid #00856F !important;
+}
+.active-border{
+    border-bottom: 2px solid white;
+}

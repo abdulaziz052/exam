@@ -17,6 +17,7 @@ let fonta = document.querySelectorAll('#text')
 let fix_btn = document.querySelector('#fix-btn')
 let gamburger = document.querySelector('#gamburger')
 let fix_gamburger = document.querySelector('#fixed-gamburger')
+let section = document.querySelectorAll('.section')
 
 
 window.addEventListener('scroll' , function(){
@@ -39,6 +40,14 @@ window.addEventListener('scroll' , function(){
     gamburger.classList.remove('hidden')
     fix_gamburger.classList.add('hidden')
   }
+  section.forEach(function(item , index) {
+    if (item.offsetTop < window.scrollY) {
+      fonta.forEach(function (item) {
+        item.classList.remove('active-border')
+      })
+      fonta[index].classList.add('active-border')
+    }
+  })
 })
 fonta.forEach(item => {
   window.addEventListener('scroll' , function(){
